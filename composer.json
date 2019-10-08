@@ -1,0 +1,45 @@
+{
+   "name": "samplejunction/active-routes-laravel",
+  "description": "The helper class for Laravel (4/5) applications to get active class base on current route",
+  "keywords": [
+    "laravel",
+    "active",
+    "routing"
+  ],
+  "license": "MIT",
+  "homepage": "https://www.hieule.info/tag/laravel-active/",
+  "authors": [
+    {
+       "name": "Pankaj Jha",
+            "email": "pankajj@samplejunction.com"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "laravel/framework": "^6.0"
+  },
+  "require-dev": {
+    "codeclimate/php-test-reporter": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "HieuLe\\Active\\": "src/",
+      "HieuLe\\ActiveTest\\": "tests/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "laravel": {
+      "providers": [
+        "HieuLe\\Active\\ActiveServiceProvider"
+      ],
+      "aliases": {
+        "Active": "HieuLe\\Active\\Facades\\Active"
+      }
+    }
+  }
+}
